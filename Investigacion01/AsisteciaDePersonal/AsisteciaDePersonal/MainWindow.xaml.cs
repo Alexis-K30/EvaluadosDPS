@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.ObjectModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,19 @@ namespace AsisteciaDePersonal
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ObservableCollection<Asistencias> asistencias = new ObservableCollection<Asistencias>();
         public MainWindow()
         {
             InitializeComponent();
+            dgAsistencias.ItemsSource = asistencias;
         }
+    }
+
+    public class Asistencias
+    {
+        public string Nombre {  get; set; }
+        public int Edad { get; set; }
+        public string Cargo { get; set; }
+        public double SueldoNeto { get; set; }
     }
 }

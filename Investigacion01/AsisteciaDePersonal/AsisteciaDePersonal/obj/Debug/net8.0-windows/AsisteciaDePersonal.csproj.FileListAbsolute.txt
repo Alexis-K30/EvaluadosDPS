@@ -18,3 +18,4 @@ C:\Users\bryan\OneDrive\Documentos\Ciclo III UDB\DPS404\EvaluadosDPS\Investigaci
 C:\Users\bryan\OneDrive\Documentos\Ciclo III UDB\DPS404\EvaluadosDPS\Investigacion01\AsisteciaDePersonal\AsisteciaDePersonal\obj\Debug\net8.0-windows\AsisteciaDePersonal.pdb
 C:\Users\bryan\OneDrive\Documentos\Ciclo III UDB\DPS404\EvaluadosDPS\Investigacion01\AsisteciaDePersonal\AsisteciaDePersonal\obj\Debug\net8.0-windows\AsisteciaDePersonal.genruntimeconfig.cache
 C:\Users\bryan\OneDrive\Documentos\Ciclo III UDB\DPS404\EvaluadosDPS\Investigacion01\AsisteciaDePersonal\AsisteciaDePersonal\obj\Debug\net8.0-windows\ref\AsisteciaDePersonal.dll
+C:\Users\bryan\OneDrive\Documentos\Ciclo III UDB\DPS404\EvaluadosDPS\Investigacion01\AsisteciaDePersonal\AsisteciaDePersonal\obj\Debug\net8.0-windows\AsisteciaDePersonal.sourcelink.json

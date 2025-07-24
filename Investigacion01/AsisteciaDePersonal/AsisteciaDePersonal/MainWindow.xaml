@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AsisteciaDePersonal"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="1,0,-1,0">
         <Label x:Name="lblNombre" Content="Nombre completo: " HorizontalAlignment="Left" Margin="71,84,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
         <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="210,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="16" FontFamily="Times New Roman"/>
         <Label x:Name="lblTitulo" Content="Control de asistencias a capacitación" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman"/>
@@ -25,6 +25,9 @@
         </ComboBox>
         <Label x:Name="lblSueldo" Content="Sueldo bruto:" HorizontalAlignment="Left" Margin="483,166,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
         <TextBox HorizontalAlignment="Left" Margin="585,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" FontFamily="Times New Roman" FontSize="16"/>
+        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="71,375,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="30" Width="83"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="646,374,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="32" Width="83"/>
+        <DataGrid x:Name="dgAsistencias" IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="True" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,230,10,80"/>
 
     </Grid>
 </Window>
