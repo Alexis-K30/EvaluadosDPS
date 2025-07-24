@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace AsisteciaDePersonal
 {
@@ -22,6 +23,19 @@ namespace AsisteciaDePersonal
         {
             InitializeComponent();
             dgAsistencias.ItemsSource = asistencias;
+            Prueba();
+        }
+
+        private void Prueba()
+        {
+            double hola = 20.50;
+            asistencias.Add(new Asistencias
+            {
+                Nombre = "Andrea Ramos",
+                Edad = 23,
+                Cargo = "Hola mundo", 
+                SueldoNeto = 20.50
+            });
         }
     }
 

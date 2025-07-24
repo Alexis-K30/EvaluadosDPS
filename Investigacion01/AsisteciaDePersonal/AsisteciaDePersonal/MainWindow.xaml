@@ -27,7 +27,14 @@
         <TextBox HorizontalAlignment="Left" Margin="585,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" FontFamily="Times New Roman" FontSize="16"/>
         <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="71,375,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="30" Width="83"/>
         <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="646,374,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="32" Width="83"/>
-        <DataGrid x:Name="dgAsistencias" IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="True" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,230,10,80"/>
+        <DataGrid x:Name="dgAsistencias" IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="False" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,230,10,80">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nombre completo" Binding="{Binding Nombre}" Width="2*"/>
+                <DataGridTextColumn Header="Edad" Binding="{Binding Edad}" Width="*"/>
+                <DataGridTextColumn Header="Cargo" Binding="{Binding Cargo}" Width="*"/>
+                <DataGridTextColumn Header="Sueldo Neto" Binding="{Binding SueldoNeto, StringFormat=C}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Window>
