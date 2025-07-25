@@ -86,14 +86,13 @@ namespace AsisteciaDePersonal
                     Nombre = nombre,
                     Edad = edad,
                     Cargo = cargo,
-                    SueldoBruto = sueldoBruto,
                     SueldoNeto = sueldoNeto
                 });
 
                 // Limpiar formulario después de agregar
                 LimpiarFormulario();
 
-                MessageBox.Show("Empleado registrado exitosamente!", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("¡Empleado registrado exitosamente!", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
@@ -146,7 +145,6 @@ namespace AsisteciaDePersonal
         public string Nombre { get; set; }
         public int Edad { get; set; }
         public string Cargo { get; set; }
-        public double SueldoBruto { get; set; }
         public double SueldoNeto { get; set; }
     }
 }
