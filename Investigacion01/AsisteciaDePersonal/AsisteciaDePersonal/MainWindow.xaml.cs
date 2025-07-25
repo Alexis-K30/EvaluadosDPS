@@ -10,6 +10,9 @@ namespace AsisteciaDePersonal
         // Lista observable para enlazar con DataGrid
         private ObservableCollection<Asistencias> asistencias = new ObservableCollection<Asistencias>();
 
+        // Salario mínimo único para todos los puestos
+        private const double SalarioMinimo = 450.00;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -39,9 +42,17 @@ namespace AsisteciaDePersonal
                 if (nacimiento > DateTime.Now.AddYears(-edad)) edad--;
 
                 // Validar y convertir sueldo bruto
-                if (!double.TryParse(txtSueldo.Text, out double sueldoBruto))
+                if (!double.TryParse(txtSueldo.Text, out double sueldoBruto) || sueldoBruto <= 0)
                 {
-                    MessageBox.Show("Ingrese un sueldo válido (solo números).", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Ingrese un sueldo válido (solo números positivos).", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                // Validar salario mínimo
+                if (sueldoBruto < SalarioMinimo)
+                {
+                    MessageBox.Show($"El sueldo debe ser igual o mayor al salario mínimo (${SalarioMinimo}).",
+                                  "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
@@ -57,11 +68,14 @@ namespace AsisteciaDePersonal
                     Nombre = nombre,
                     Edad = edad,
                     Cargo = cargo,
+                    SueldoBruto = sueldoBruto,
                     SueldoNeto = sueldoNeto
                 });
 
                 // Limpiar formulario después de agregar
                 LimpiarFormulario();
+
+                MessageBox.Show("Empleado registrado exitosamente!", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
@@ -75,6 +89,7 @@ namespace AsisteciaDePersonal
             dpFechaNac.SelectedDate = null;
             cmbCargo.SelectedIndex = -1;
             txtSueldo.Clear();
+            txtNombre.Focus(); // Coloca el foco en el primer campo
         }
     }
 
@@ -84,6 +99,7 @@ namespace AsisteciaDePersonal
         public string Nombre { get; set; }
         public int Edad { get; set; }
         public string Cargo { get; set; }
+        public double SueldoBruto { get; set; }
         public double SueldoNeto { get; set; }
     }
 }

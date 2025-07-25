@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\PROYECTOS\\UDB\\EvaluadosDPS\\Investigacion01\\AsisteciaDePersonal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8FAB070-7F83-4F63-BD05-4ADEDB9194DC}|AsisteciaDePersonal\\AsisteciaDePersonal.csproj|e:\\proyectos\\udb\\evaluadosdps\\investigacion01\\asisteciadepersonal\\asisteciadepersonal\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E8FAB070-7F83-4F63-BD05-4ADEDB9194DC}|AsisteciaDePersonal\\AsisteciaDePersonal.csproj|solutionrelative:asisteciadepersonal\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8FAB070-7F83-4F63-BD05-4ADEDB9194DC}|AsisteciaDePersonal\\AsisteciaDePersonal.csproj|e:\\proyectos\\udb\\evaluadosdps\\investigacion01\\asisteciadepersonal\\asisteciadepersonal\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8FAB070-7F83-4F63-BD05-4ADEDB9194DC}|AsisteciaDePersonal\\AsisteciaDePersonal.csproj|solutionrelative:asisteciadepersonal\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8FAB070-7F83-4F63-BD05-4ADEDB9194DC}|AsisteciaDePersonal\\AsisteciaDePersonal.csproj|e:\\proyectos\\udb\\evaluadosdps\\investigacion01\\asisteciadepersonal\\asisteciadepersonal\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E8FAB070-7F83-4F63-BD05-4ADEDB9194DC}|AsisteciaDePersonal\\AsisteciaDePersonal.csproj|solutionrelative:asisteciadepersonal\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\PROYECTOS\\UDB\\EvaluadosDPS\\Investigacion01\\AsisteciaDePersonal\\AsisteciaDePersonal\\MainWindow.xaml",
               "RelativeDocumentMoniker": "AsisteciaDePersonal\\MainWindow.xaml",
@@ -42,15 +42,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\PROYECTOS\\UDB\\EvaluadosDPS\\Investigacion01\\AsisteciaDePersonal\\AsisteciaDePersonal\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "AsisteciaDePersonal\\MainWindow.xaml.cs",
               "ToolTip": "E:\\PROYECTOS\\UDB\\EvaluadosDPS\\Investigacion01\\AsisteciaDePersonal\\AsisteciaDePersonal\\MainWindow.xaml.cs",
               "RelativeToolTip": "AsisteciaDePersonal\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwB4AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowGgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T03:11:57.001Z"
+              "WhenOpened": "2025-07-24T03:11:57.001Z",
+              "EditorCaption": ""
             }
           ]
         }
