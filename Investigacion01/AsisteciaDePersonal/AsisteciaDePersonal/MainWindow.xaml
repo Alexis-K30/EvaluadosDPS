@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AsisteciaDePersonal"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="1,0,-1,0">
-        <Label x:Name="lblNombre" Content="Nombre completo: " HorizontalAlignment="Left" Margin="71,84,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
-        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="210,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="16" FontFamily="Times New Roman"/>
+        Title="MainWindow" Height="539" Width="910">
+    <Grid Margin="1,0,0,-5">
+        <Label x:Name="lblNombre" Content="Nombre completo: " HorizontalAlignment="Left" Margin="115,82,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="254,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="16" FontFamily="Times New Roman"/>
 
-        <Label x:Name="lblTitulo" Content="Control de asistencias a capacitación" HorizontalAlignment="Center" Margin="0,24,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman"/>
+        <Label x:Name="lblTitulo" Content="Control de asistencias a capacitación" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Times New Roman"/>
 
-        <Label x:Name="lblFechaNac" Content="Fecha de nacimiento: " HorizontalAlignment="Left" Margin="71,166,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
-        <DatePicker x:Name="dpFechaNac" HorizontalAlignment="Left" Margin="227,168,0,0" VerticalAlignment="Top" Width="158" FontSize="14" FontFamily="Times New Roman"/>
+        <Label x:Name="lblFechaNac" Content="Fecha de nacimiento: " HorizontalAlignment="Left" Margin="115,164,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
+        <DatePicker x:Name="dpFechaNac" HorizontalAlignment="Left" Margin="271,166,0,0" VerticalAlignment="Top" Width="158" FontSize="14" FontFamily="Times New Roman"/>
 
-        <Label x:Name="lblCargo" Content="Cargo:" HorizontalAlignment="Left" Margin="483,84,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
-        <ComboBox x:Name="cmbCargo" HorizontalAlignment="Left" Margin="541,87,0,0" VerticalAlignment="Top" Width="188" Height="25" FontSize="16" FontFamily="Times New Roman">
+        <Label x:Name="lblCargo" Content="Cargo:" HorizontalAlignment="Left" Margin="527,82,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Times New Roman"/>
+        <ComboBox x:Name="cmbCargo" HorizontalAlignment="Left" Margin="585,85,0,0" VerticalAlignment="Top" Width="188" Height="25" FontSize="16" FontFamily="Times New Roman">
             <ComboBoxItem Content="Operador de Empacadora"/>
             <ComboBoxItem Content="Operario de fundición"/>
             <ComboBoxItem Content="Coordinador de Bodega"/>
@@ -27,13 +27,13 @@
             <ComboBoxItem Content="Administrador de Recursos Humanos"/>
         </ComboBox>
 
-        <Label x:Name="lblSueldo" Content="Sueldo bruto:" HorizontalAlignment="Left" Margin="483,166,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
-        <TextBox x:Name="txtSueldo" HorizontalAlignment="Left" Margin="585,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="lblSueldo" Content="Sueldo bruto:" HorizontalAlignment="Left" Margin="527,164,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox x:Name="txtSueldo" HorizontalAlignment="Left" Margin="629,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" FontFamily="Times New Roman" FontSize="16"/>
 
-        <Button x:Name="btnRegistrar" Content="Registrar" Click="btnRegistrar_Click" HorizontalAlignment="Left" Margin="71,375,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="30" Width="83"/>
-        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="646,374,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="32" Width="83"/>
+        <Button x:Name="btnRegistrar" Content="Registrar" Click="btnRegistrar_Click" HorizontalAlignment="Left" Margin="115,440,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="30" Width="83"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="690,439,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="32" Width="83" Click="btnSalir_Click"/>
 
-        <DataGrid x:Name="dgAsistencias" IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="False" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,230,10,80">
+        <DataGrid x:Name="dgAsistencias" IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="False" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,230,10,110" FontFamily="Times New Roman" FontSize="16">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nombre completo" Binding="{Binding Nombre}" Width="2*"/>
                 <DataGridTextColumn Header="Edad" Binding="{Binding Edad}" Width="*"/>
