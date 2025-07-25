@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -34,12 +35,29 @@ namespace AsisteciaDePersonal
                 }
 
                 string nombre = txtNombre.Text;
+                //Validar que el nombre empiece con mayuscula por cada espacio que haya
+                if(!ValidarNombre(nombre))
+                {
+                    MessageBox.Show("El nombre ingresado no esta completo o el nombre es muy largo. Por favor ingrese su nombre completo o acorte su nombre", "Advertencia", 
+                        MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+                //Formateamos el nombre para que este con las iniciales en mayuscula
+                nombre = CapitalizarNombre(nombre);
+
                 DateTime nacimiento = dpFechaNac.SelectedDate.Value;
                 string cargo = (cmbCargo.SelectedItem as ComboBoxItem)?.Content.ToString();
 
                 // Calcular edad
                 int edad = DateTime.Now.Year - nacimiento.Year;
                 if (nacimiento > DateTime.Now.AddYears(-edad)) edad--;
+                //Validar que la edad sea mayor a 18
+                if (edad < 18)
+                {
+                    MessageBox.Show("Usted es menor de 18 años. No puede registrarse", "Advertencia", 
+                        MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
 
                 // Validar y convertir sueldo bruto
                 if (!double.TryParse(txtSueldo.Text, out double sueldoBruto) || sueldoBruto <= 0)
@@ -83,6 +101,30 @@ namespace AsisteciaDePersonal
             }
         }
 
+        private bool ValidarNombre(string nombre)
+        {
+            string patron = @"^([A-Za-zÁÉÍÓÚÑáéíóúñ]+)(\s[A-Za-zÁÉÍÓÚÑáéíóúñ]+){1,6}$";
+            return Regex.IsMatch(nombre, patron);
+        }
+
+        public static string CapitalizarNombre(string nombre)
+        {
+            if (string.IsNullOrWhiteSpace(nombre)) return nombre;
+
+            string[] palabras = nombre.ToLower().Split(' ');
+
+            for (int i = 0; i < palabras.Length; i++)
+            {
+                if (palabras[i].Length > 0)
+                {
+                    palabras[i] = char.ToUpper(palabras[i][0]) + palabras[i].Substring(1);
+                }
+            }
+
+            return string.Join(" ", palabras);
+        }
+
+
         private void LimpiarFormulario()
         {
             txtNombre.Clear();
@@ -90,6 +132,11 @@ namespace AsisteciaDePersonal
             cmbCargo.SelectedIndex = -1;
             txtSueldo.Clear();
             txtNombre.Focus(); // Coloca el foco en el primer campo
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 
