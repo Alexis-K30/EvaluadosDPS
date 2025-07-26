@@ -38,7 +38,7 @@
                 <DataGridTextColumn Header="Nombre completo" Binding="{Binding Nombre}" Width="2*"/>
                 <DataGridTextColumn Header="Edad (en años)" Binding="{Binding Edad}" Width="*"/>
                 <DataGridTextColumn Header="Cargo" Binding="{Binding Cargo}" Width="*"/>
-                <DataGridTextColumn Header="Sueldo Mensual($)" Binding="{Binding SueldoNeto, StringFormat=C}" Width="*"/>
+                <DataGridTextColumn Header="Sueldo Neto Mensual($)" Binding="{Binding SueldoNeto, StringFormat=C}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

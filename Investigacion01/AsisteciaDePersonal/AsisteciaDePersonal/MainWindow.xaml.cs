@@ -12,7 +12,7 @@ namespace AsisteciaDePersonal
         private ObservableCollection<Asistencias> asistencias = new ObservableCollection<Asistencias>();
 
         // Salario mínimo único para todos los puestos
-        private const double SalarioMinimo = 450.00;
+        private const double SalarioMinimo = 408.80;
 
         public MainWindow()
         {
