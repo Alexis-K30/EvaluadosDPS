@@ -27,8 +27,8 @@
             <ComboBoxItem Content="Administrador de Recursos Humanos"/>
         </ComboBox>
 
-        <Label x:Name="lblSueldo" Content="Sueldo bruto:" HorizontalAlignment="Left" Margin="527,164,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
-        <TextBox x:Name="txtSueldo" HorizontalAlignment="Left" Margin="629,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" FontFamily="Times New Roman" FontSize="16"/>
+        <Label x:Name="lblSueldo" Content="Sueldo bruto mensual:" HorizontalAlignment="Left" Margin="527,164,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox x:Name="txtSueldo" HorizontalAlignment="Left" Margin="690,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" FontFamily="Times New Roman" FontSize="16"/>
 
         <Button x:Name="btnRegistrar" Content="Registrar" Click="btnRegistrar_Click" HorizontalAlignment="Left" Margin="115,440,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="30" Width="83"/>
         <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="690,439,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Height="32" Width="83" Click="btnSalir_Click"/>
@@ -36,9 +36,9 @@
         <DataGrid x:Name="dgAsistencias" IsReadOnly="True" CanUserAddRows="False" AutoGenerateColumns="False" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,230,10,110" FontFamily="Times New Roman" FontSize="16">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nombre completo" Binding="{Binding Nombre}" Width="2*"/>
-                <DataGridTextColumn Header="Edad" Binding="{Binding Edad}" Width="*"/>
+                <DataGridTextColumn Header="Edad (en años)" Binding="{Binding Edad}" Width="*"/>
                 <DataGridTextColumn Header="Cargo" Binding="{Binding Cargo}" Width="*"/>
-                <DataGridTextColumn Header="Sueldo Neto" Binding="{Binding SueldoNeto, StringFormat=C}" Width="*"/>
+                <DataGridTextColumn Header="Sueldo Mensual($)" Binding="{Binding SueldoNeto, StringFormat=C}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

@@ -100,12 +100,23 @@ namespace AsisteciaDePersonal
             }
         }
 
+        /// <summary>
+        /// Validacion del nombre con el patron que se requiere, tambien se pide que sea minimo
+        /// dos palabras
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <returns></returns>
         private bool ValidarNombre(string nombre)
         {
             string patron = @"^([A-Za-zÁÉÍÓÚÑáéíóúñ]+)(\s[A-Za-zÁÉÍÓÚÑáéíóúñ]+){1,6}$";
             return Regex.IsMatch(nombre, patron);
         }
 
+        /// <summary>
+        /// Funcion que reformatea el nombre para insersion en la tabla de datos con las iniciales en mayusculas
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <returns></returns>
         public static string CapitalizarNombre(string nombre)
         {
             if (string.IsNullOrWhiteSpace(nombre)) return nombre;
@@ -123,7 +134,9 @@ namespace AsisteciaDePersonal
             return string.Join(" ", palabras);
         }
 
-
+        /// <summary>
+        /// Limpia todo el formulario, vuelve a su valor por defecto a los campos
+        /// </summary>
         private void LimpiarFormulario()
         {
             txtNombre.Clear();

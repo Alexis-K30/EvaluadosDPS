@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AsisteciaDePersonal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb14d2decf945cc327aa8e944c84ca7d8e8687a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8492f377197aefb86013da2dd5792d4f04b824bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("AsisteciaDePersonal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AsisteciaDePersonal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
