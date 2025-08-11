@@ -30,7 +30,7 @@ namespace AsisteciaDePersonal
                     cmbCargo.SelectedIndex == -1 ||
                     string.IsNullOrWhiteSpace(txtSueldo.Text))
                 {
-                    MessageBox.Show("Por favor complete todos los campos.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Por favor complete todos los campos solicitados.", "Advertencia", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
@@ -96,7 +96,7 @@ namespace AsisteciaDePersonal
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al registrar empleado: " + ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Error al registrar empleado: " + ex.Message, "Error Grave", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
