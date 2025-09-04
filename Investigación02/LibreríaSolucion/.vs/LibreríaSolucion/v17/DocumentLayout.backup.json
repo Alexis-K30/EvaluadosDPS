@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|c:\\users\\bryan\\onedrive\\documentos\\ciclo iii udb\\dps404\\evaluadosdps\\investigaci\u00F3n02\\librer\u00EDasolucion\\librer\u00EDa\\views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|solutionrelative:librer\u00EDa\\views\\libros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|c:\\users\\bryan\\onedrive\\documentos\\ciclo iii udb\\dps404\\evaluadosdps\\investigaci\u00F3n02\\librer\u00EDasolucion\\librer\u00EDa\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|solutionrelative:librer\u00EDa\\views\\libros\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|c:\\users\\bryan\\onedrive\\documentos\\ciclo iii udb\\dps404\\evaluadosdps\\investigaci\u00F3n02\\librer\u00EDasolucion\\librer\u00EDa\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|solutionrelative:librer\u00EDa\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|c:\\users\\bryan\\onedrive\\documentos\\ciclo iii udb\\dps404\\evaluadosdps\\investigaci\u00F3n02\\librer\u00EDasolucion\\librer\u00EDa\\models\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|solutionrelative:librer\u00EDa\\models\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|c:\\users\\bryan\\onedrive\\documentos\\ciclo iii udb\\dps404\\evaluadosdps\\investigaci\u00F3n02\\librer\u00EDasolucion\\librer\u00EDa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CEBD6576-9618-4B5A-84C1-291BE512EE7A}|Librer\u00EDa\\Librer\u00EDa.csproj|solutionrelative:librer\u00EDa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Views\\Libros\\Create.cshtml",
+              "RelativeDocumentMoniker": "Librer\u00EDa\\Views\\Libros\\Create.cshtml",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Views\\Libros\\Create.cshtml",
+              "RelativeToolTip": "Librer\u00EDa\\Views\\Libros\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-04T21:10:47.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Librer\u00EDa\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Librer\u00EDa\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-04T21:01:05.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Views\\Libros\\Index.cshtml",
+              "RelativeDocumentMoniker": "Librer\u00EDa\\Views\\Libros\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Views\\Libros\\Index.cshtml*",
+              "RelativeToolTip": "Librer\u00EDa\\Views\\Libros\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-04T20:59:34.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Libros.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Models\\Libros.cs",
+              "RelativeDocumentMoniker": "Librer\u00EDa\\Models\\Libros.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Models\\Libros.cs",
+              "RelativeToolTip": "Librer\u00EDa\\Models\\Libros.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T20:57:01.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibrosController.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Controllers\\LibrosController.cs",
+              "RelativeDocumentMoniker": "Librer\u00EDa\\Controllers\\LibrosController.cs",
+              "ToolTip": "C:\\Users\\bryan\\OneDrive\\Documentos\\Ciclo III UDB\\DPS404\\EvaluadosDPS\\Investigaci\u00F3n02\\Librer\u00EDaSolucion\\Librer\u00EDa\\Controllers\\LibrosController.cs",
+              "RelativeToolTip": "Librer\u00EDa\\Controllers\\LibrosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T20:56:27.769Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
