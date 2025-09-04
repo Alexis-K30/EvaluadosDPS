@@ -1,12 +1,12 @@
 # Carpetas de compilación y temporales
 **/bin/
+**/bin/**
 **/obj/
+**/obj/**
 **/Debug/
 **/Release/
 .vs/
-TestResults/
-packages/
-node_modules/
+.vs/**
 
 # Archivos de configuración y usuario
 *.user
