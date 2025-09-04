@@ -1,17 +1,3 @@
-# Ignorar carpetas de compilación y temporales
-**/bin/
-**/obj/
-**/Debug/
-**/Release/
-.vs/
-
-# Configuración y temporales de usuario
-*.user
-*.suo
-*.tmp
-*.log
-*.cache
-
 # Carpetas de compilación y temporales
 **/bin/
 **/obj/
