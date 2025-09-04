@@ -1,0 +1,70 @@
+# Ignorar carpetas de compilación y temporales
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+.vs/
+
+# Configuración y temporales de usuario
+*.user
+*.suo
+*.tmp
+*.log
+*.cache
+
+# Carpetas de compilación y temporales
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+.vs/
+TestResults/
+packages/
+node_modules/
+
+# Archivos de configuración y usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+*.cache
+*.log
+*.tmp
+
+# Archivos de publicación
+*.Publish.xml
+*.pubxml
+*.pdb
+
+# Archivos de configuración de IIS Express
+*.config
+*.dbmdl
+*.dbproj
+*.mdf
+*.ldf
+
+# Archivos de Web.config transformados
+web.*.config
+
+# Archivos de dependencias NuGet
+project.lock.json
+project.fragment.lock.json
+*.nupkg
+*.nuspec
+
+# Archivos de Rider o Visual Studio Code
+.idea/
+.vscode/
+
+# Archivos de entorno local
+.env
+*.local.json
+
+# Entity Framework: migraciones y base de datos local
+Migrations/
+*.sqlite
+*.sqlite3
+*.db
+*.bak
