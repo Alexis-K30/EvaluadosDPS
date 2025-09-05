@@ -1,0 +1,14 @@
+﻿@model Librería.Models.Libros
+@{
+    ViewData["Title"] = "Detalles";
+}
+<h2>Detalles de @Model.NameBook</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.NameBook</h5>
+        <p class="card-text"><strong>Autor:</strong> @Model.NameAuthor</p>
+        <p class="card-text"><strong>Año:</strong> @Model.anioPubli</p>
+        <a href="@Url.Action("Directorio", "Libros")" class="btn btn-secondary">Volver</a>
+    </div>
+</div>

@@ -24,6 +24,16 @@ namespace Librería.Controllers
             return View();
         }
 
+        public IActionResult Detalles(int Id)
+        {
+            var libro = libros.FirstOrDefault(libro => libro.Id == Id);
+            if (libro == null)
+            {
+                return NotFound();
+            }
+            return View(libro);
+        }
+
         [HttpPost]
         public IActionResult Create(Libros libro)
         {
