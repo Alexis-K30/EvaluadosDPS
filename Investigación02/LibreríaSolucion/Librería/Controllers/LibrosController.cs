@@ -8,13 +8,13 @@ namespace Librería.Controllers
     {
         private static List<Libros> libros = new List<Libros>
         {
-            new Libros { Id = 1, Name = "Laptop", Price = 999.99m },
-            new Libros { Id = 2, Name = "Smarthphone", Price = 499.99m },
-            new Libros { Id = 3, Name = "SmartWatch", Price = 65.99m },
-            new Libros { Id = 4, Name = "Tablet", Price = 325.54m }
+            new Libros { Id = 1, NameBook = "Laptop", NameAuthor = "Hola", anioPubli = 2014 },
+            new Libros { Id = 2, NameBook = "Smarthphone", NameAuthor = "Hola", anioPubli = 2010 },
+            new Libros { Id = 3, NameBook = "SmartWatch", NameAuthor = "Hola", anioPubli = 1980 },
+            new Libros { Id = 4, NameBook = "Tablet", NameAuthor = "Hola", anioPubli = 2013 }
         };
 
-        public IActionResult Index()
+        public IActionResult Directorio()
         {
             return View(libros);
         }
@@ -31,7 +31,7 @@ namespace Librería.Controllers
             {
                 libro.Id = libros.Count + 1;
                 libros.Add(libro);
-                return RedirectToAction("Index");
+                return RedirectToAction("Directorio");
             }
             return View(libro);
         }
