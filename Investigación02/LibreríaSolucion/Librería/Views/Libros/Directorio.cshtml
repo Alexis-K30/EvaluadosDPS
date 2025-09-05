@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Librería.Models.Libros>
+<h2>Directorio de libros</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Año de publicación</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            bool esPrimero = true;
+        }
+        @foreach (var libro in Model)
+        {
+            <tr>
+                <td>@libro.Id</td>
+                <td>@libro.NameBook</td>
+                <td>@libro.NameAuthor</td>
+                <td>@libro.anioPubli</td>
+                <td>
+                    @if(esPrimero)
+                    {
+                        <a class="btn btn-success" asp-area="" asp-controller="Libros" asp-action="Create">Agregar libro</a>
+                        esPrimero = false;
+                    }
+                    <a class="btn btn-warning" asp-area="" asp-controller="Libros" asp-action="Create">Detalles</a>
+                    <a class="btn btn-danger" asp-area="" asp-controller="Libros" asp-action="Create">Eliminar libro</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
