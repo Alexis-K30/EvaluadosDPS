@@ -6,13 +6,14 @@ namespace Librería.Controllers
 {
     public class LibrosController : Controller
     {
-        private static List<Libros> libros = new List<Libros>
-        {
-            new Libros { Id = 1, NameBook = "Laptop", NameAuthor = "Hola", anioPubli = 2014 },
-            new Libros { Id = 2, NameBook = "Smarthphone", NameAuthor = "Hola", anioPubli = 2010 },
-            new Libros { Id = 3, NameBook = "SmartWatch", NameAuthor = "Hola", anioPubli = 1980 },
-            new Libros { Id = 4, NameBook = "Tablet", NameAuthor = "Hola", anioPubli = 2013 }
-        };
+        private static List<Libros> libros =
+        [
+            new() { Id = 1, NameBook = "Cien años de soledad", NameAuthor = "Gabriel García Márquez", anioPubli = 1967 },
+            new() { Id = 2, NameBook = "1984", NameAuthor = "George Orwell", anioPubli = 1949 },
+            new() { Id = 3, NameBook = "Orgullo y prejuicio (Pride and Prejudice)", NameAuthor = "Jane Austen", anioPubli = 1813 },
+            new() { Id = 4, NameBook = "El Señor de los Anillos: La Comunidad del Anillo (The Fellowship of the Ring)", NameAuthor = "J.R.R. Tolkien", anioPubli = 1954 }, 
+            new() { Id = 5, NameBook = "La casa de los espíritus", NameAuthor = "Isabel Allende", anioPubli = 1982}
+        ];
 
         public IActionResult Directorio()
         {
