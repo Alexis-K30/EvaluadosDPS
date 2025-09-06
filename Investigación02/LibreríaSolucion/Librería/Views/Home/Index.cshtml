@@ -2,11 +2,13 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container mt-5">
-    <div class="card shadow-sm border-0">
-        <div class="card-body text-center">
-            <h2 class="card-title">Bienvenido al Directorio de libros</h2>
-            <a class="btn btn-success" asp-area="" asp-controller="Libros" asp-action="Directorio">Directorio</a>
+<div class="d-flex justify-content-center align-items-center" style="height: 75vh; background-color: #f8f9fa;">
+    <div class="card shadow-lg border-0 rounded-5" style="max-width: 500px; width: 100%;">
+        <div class="card-body text-center bg-white rounded-3">
+            <h2 class="card-title mb-4">📚 Bienvenido al Directorio de libros</h2>
+            <a class="btn btn-success btn-lg rounded" asp-area="" asp-controller="Libros" asp-action="Directorio">
+                Ir al Directorio
+            </a>
         </div>
     </div>
 </div>
