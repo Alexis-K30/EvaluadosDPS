@@ -1,0 +1,18 @@
+﻿@model Librería.Models.Libros
+
+@{
+    ViewData["Title"] = "Eliminar Libro";
+}
+
+<h2>¿Estás seguro de eliminar el libro?</h2>
+<div>
+    <h3>@Model.NameBook</h3>
+    <p>Autor: @Model.NameAuthor</p>
+    <p>Año de publicación: @Model.anioPubli</p>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+    <a asp-action="Directorio" class="btn btn-secondary">Cancelar</a>
+</form>

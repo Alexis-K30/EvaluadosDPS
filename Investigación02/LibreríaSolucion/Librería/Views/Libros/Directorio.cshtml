@@ -3,6 +3,9 @@
     ViewData["Title"] = "Directorio";
 }
 <h2>Directorio de libros</h2>
+<div>
+    <a class="btn btn-success" asp-area="" asp-controller="Libros" asp-action="Create">Agregar libro</a>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -14,9 +17,6 @@
         </tr>
     </thead>
     <tbody>
-        @{
-            bool esPrimero = true;
-        }
         @foreach (var libro in Model)
         {
             <tr>
@@ -25,13 +25,8 @@
                 <td>@libro.NameAuthor</td>
                 <td>@libro.anioPubli</td>
                 <td>
-                    @if(esPrimero)
-                    {
-                        <a class="btn btn-success" asp-area="" asp-controller="Libros" asp-action="Create">Agregar libro</a>
-                        esPrimero = false;
-                    }
                     <a class="btn btn-warning" asp-area="" asp-controller="Libros" asp-action="Detalles" asp-route-id="@libro.Id">Detalles</a>
-                    <a class="btn btn-danger" asp-area="" asp-controller="Libros" asp-action="Create">Eliminar libro</a>
+                    <a class="btn btn-danger" asp-area="" asp-controller="Libros" asp-action="Delete" asp-route-id="@libro.Id">Eliminar libro</a>
                 </td>
             </tr>
         }
