@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CotizacionWeb</title>
+
+    <!-- Bootstrap base -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CotizacionWeb.styles.css" asp-append-version="true" />
+
+    <!-- Tipografía corporativa -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos generales con tu paleta de colores -->
+    <style>
+        body {
+            background-color: #FAFAFA; /* Blanco perla */
+            color: #1E1E1E; /* Negro carbón */
+            font-family: 'Playfair Display', serif;
+        }
+
+        header .navbar {
+            background-color: #F7C8D7; /* Rosa pastel */
+        }
+
+        header .navbar-brand,
+        header .nav-link {
+            color: #1E1E1E !important; /* Negro carbón */
+            font-weight: 600;
+        }
+
+            header .nav-link:hover {
+                color: #4A4A4A !important; /* Gris elegante */
+            }
+
+        footer {
+            background-color: #E6D6F5; /* Lila suave */
+            color: #1E1E1E;
+            padding: 10px 0;
+        }
+
+            footer a {
+                color: #1E1E1E;
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    color: #4A4A4A;
+                }
+    </style>
+
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CotizacionWeb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Política de privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top text-center">
+        <div class="container">
+            &copy; 2025 - CotizacionWeb · <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de privacidad</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
