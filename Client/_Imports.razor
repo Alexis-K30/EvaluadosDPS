@@ -1,0 +1,21 @@
+﻿@using System.Net.Http                    // Para trabajar con HttpClient y enviar solicitudes HTTP (GET, POST, etc.)
+@using System.Net.Http.Json               // Extensiones para serializar/deserializar JSON con HttpClient (GetFromJsonAsync, PostAsJsonAsync)
+@using Microsoft.AspNetCore.Components.Forms // Formularios en Blazor: EditForm, InputText, validaciones, etc.
+@using Microsoft.AspNetCore.Components.Routing // Navegación y enrutamiento (NavLink, NavigationManager)
+@using Microsoft.AspNetCore.Components.Web // Eventos de Blazor Web: Xonclick, Xonchange, etc.
+@using Microsoft.AspNetCore.Components.Web.Virtualization // Listas virtualizadas (renderizado eficiente de colecciones grandes)
+@using Microsoft.AspNetCore.Components.WebAssembly.Http // Extensiones específicas de Blazor WebAssembly para HttpClient (CORS, cookies)
+@using Microsoft.JSInterop                // Interoperabilidad con JavaScript (ejecutar funciones JS desde C#)
+
+@using Client                             // Namespace raíz del proyecto Client
+@using Client.Layout                      // Importa los Layouts (ejemplo: MainLayout.razor)
+@using Shared                             // Namespace raíz del proyecto Shared
+@using Shared.Models                      // Modelos de datos compartidos (Producto, Usuario, etc.)
+@using Client.Components                  // Componentes propios (CotizarModal, NavMenu, etc.)
+@using Client.Components.Admin
+
+
+// OPCIONALES Y RECOMENDADOS SEGÚN EL PROYECTO:
+// using Microsoft.AspNetCore.Components.Authorization // Para login, roles y autenticación/autorización
+// using System.ComponentModel.DataAnnotations         // Para validaciones con atributos [Required], [EmailAddress], etc.
+// using System.Linq                                   // Para consultas y transformaciones de colecciones (Where, Select, Take, etc.)

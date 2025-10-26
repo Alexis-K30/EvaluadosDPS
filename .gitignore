@@ -54,3 +54,11 @@ Migrations/
 *.sqlite3
 *.db
 *.bak
+
+# Dependencias Node
+node_modules/
+
+#Archivo sensible
+/Server/appsettings.Development.json
+# Configuración sensible local
+/Server/appsettings.Development.json
