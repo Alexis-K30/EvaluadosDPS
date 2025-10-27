@@ -1,4 +1,4 @@
-*, ::before, ::after {
+﻿*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -2038,3 +2038,25 @@ video {
     text-align: left;
   }
 }
+
+/* 🔹 Fondo animado con colores más notables y movimiento más evidente */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    background: linear-gradient(270deg, #f8c1d6, #ffffff, #f7b6d1, #fef0f5);
+    background-size: 400% 400%; /* Más movimiento en el degradado */
+    animation: gradientMove 8s ease-in-out infinite; /* Más rápido y suave */
+}
+
